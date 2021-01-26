@@ -1,4 +1,4 @@
-package com.a.m;
+package task.one.am;
 
 public class HelloWorld {
     public static void main (String[] args) {
