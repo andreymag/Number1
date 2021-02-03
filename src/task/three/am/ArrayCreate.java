@@ -11,9 +11,10 @@ public class ArrayCreate {
         num[2] = 3;
         num[3] = 2;
         num[4] = 1;
-        int change = num[0];
-        num[0] = num[4];
+        int change = num[num.length - 5];
+        num[num.length - 5] = num[4];
         num[4] = change;
-        System.out.println(num[num.length - 5]+num[num.length - 3]);
+        int sumFirstNumThirdNum = num[num.length - 3] + num[num.length - 5];
+        System.out.println(sumFirstNumThirdNum);
     }
 }
