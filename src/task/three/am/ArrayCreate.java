@@ -14,7 +14,11 @@ public class ArrayCreate {
         int change = num[num.length - 5];
         num[num.length - 5] = num[4];
         num[4] = change;
+        System.out.println("Cумма первого и среднего элемента массива равна " + (num[num.length - 3] + num[num.length - 5]));
+        /*
+        или сделать вывод так:
         int sumFirstNumThirdNum = num[num.length - 3] + num[num.length - 5];
-        System.out.println(sumFirstNumThirdNum);
+        System.out.println("Cумма первого и среднего элемента массива равна " + sumFirstNumThirdNum);
+         */
     }
 }
