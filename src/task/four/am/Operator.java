@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Operator {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Input a number: ");
+        System.out.println("Введите число: ");
         double x = in.nextDouble();
         double y = in.nextDouble();
         double z = in.nextDouble();
