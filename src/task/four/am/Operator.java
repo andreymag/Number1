@@ -4,7 +4,7 @@ package task.four.am;
 
 
 import java.util.Scanner;
-public class Calc {
+public class Operator {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Input a number: ");
