@@ -20,7 +20,7 @@ public class CycleFour {
         for(int s = 0 ; s < row.length ; s++) {
             row[s] *= 3;
         }
-        System.out.println(Arrays.toString(row));
+        System.out.println("Первоя строка матрицы умноженная на 3: " + Arrays.toString(row));
 
     }
 }
