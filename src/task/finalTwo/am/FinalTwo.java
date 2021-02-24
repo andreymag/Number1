@@ -11,26 +11,23 @@ public class FinalTwo {
         char [] mas = vvod.toCharArray();
         if (check(mas)) {
             int total = 0;
-            System.out.println("Уравнение введено верно");
             if(mas[0] == 'x' && mas[1] == '+') {
-                total = (int) mas[4] - (int) mas[2];
+                total = Character.getNumericValue(mas[4]) - Character.getNumericValue(mas[2]);
             }
             else if(mas[2] == 'x' && mas[1] == '+') {
-                total = (int) mas[4] - (int) mas[0];
+                total = Character.getNumericValue(mas[4]) - Character.getNumericValue(mas[0]);
             }
             else if(mas[4] == 'x' && mas[1] == '+') {
-                System.out.println(Arrays.toString(mas));
-                total = (int) mas[0] + (int) mas[2];
+                total = Character.getNumericValue(mas[0]) + Character.getNumericValue(mas[2]);
             }
             else if(mas[0] == 'x' && mas[1] == '-') {
-                System.out.println(Arrays.toString(mas));
-                total = (int) mas[2] + (int) mas[4];
+                total = Character.getNumericValue(mas[2]) + Character.getNumericValue(mas[4]);
             }
             else if(mas[2] == 'x' && mas[1] == '-') {
-                total = (int) mas[0] - (int) mas[4];
+                total = Character.getNumericValue(mas[0]) - Character.getNumericValue(mas[4]);
             }
             else if(mas[4] == 'x' && mas[1] == '-') {
-                total = (int) mas[0] - (int) mas[2];
+                total = Character.getNumericValue(mas[0]) - Character.getNumericValue(mas[2]);
             }
             System.out.println("Вывод: " + total);
         } else {
