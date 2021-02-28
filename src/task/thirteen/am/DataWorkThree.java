@@ -30,7 +30,7 @@ public class DataWorkThree {
                     count++;
                 }
             }
-            System.out.println("Кол-во слов с латинецей: "+count);
+            System.out.println("Кол-во слов с латинецей: " + count);
         }
     }
 }
