@@ -9,8 +9,14 @@ public class DataWorkThree {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите слова одной строкой через пробел");
         String slova1 = in.nextLine();
-        boolean check1 = slova1.contains(" ");
-        if (check1){
+        String[] s1 = slova1.split(" ");
+        if (s1.length == 1){
+            System.out.println("Вы ввели одно слово");
+        }
+        else if (s1.length == 0){
+            System.out.println("Вы не ввели слов");
+        }
+        else {
             Pattern latin = Pattern.compile("\\b[A-Za-z]+\\b");
             Matcher m = latin.matcher(slova1);
             StringBuilder slova2 = new StringBuilder();
@@ -24,9 +30,7 @@ public class DataWorkThree {
                     count++;
                 }
             }
-            System.out.println("Кол-во слов с латинецей "+count);
+            System.out.println("Кол-во слов с латинецей: "+count);
         }
-        else
-            System.out.println("Вы ввели одно слово");
     }
 }
