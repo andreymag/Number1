@@ -10,11 +10,11 @@ public class DataWorkThree {
         System.out.println("Введите слова одной строкой через пробел");
         String slova1 = in.nextLine();
         String[] s1 = slova1.split(" ");
-        if (s1.length == 1){
-            System.out.println("Вы ввели одно слово");
-        }
-        else if (s1.length == 0){
+        if (slova1.equals("") || s1.length == 0){
             System.out.println("Вы не ввели слов");
+        }
+        else if (s1.length == 1){
+            System.out.println("Вы ввели одно слово");
         }
         else {
             Pattern latin = Pattern.compile("\\b[A-Za-z]+\\b");
