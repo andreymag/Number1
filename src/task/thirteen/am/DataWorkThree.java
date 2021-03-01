@@ -13,9 +13,6 @@ public class DataWorkThree {
         if (slova1.equals("") || s1.length == 0){
             System.out.println("Вы не ввели слов");
         }
-        else if (s1.length == 1){
-            System.out.println("Вы ввели одно слово");
-        }
         else {
             Pattern latin = Pattern.compile("\\b[A-Za-z]+\\b");
             Matcher m = latin.matcher(slova1);
