@@ -15,7 +15,7 @@ public class FinalFour {
         Scanner in = new Scanner(System.in);
         System.out.print("Попытка № 1, если вы хотите воспользоваться подсказкой введите \"Подсказка\": ");
         String answer1 = in.nextLine();
-        if (answer1.equals(trueAnswer)){
+        if (answer1.equalsIgnoreCase(trueAnswer)){
             System.out.println(pravilno);
         }
         else if (answer1.equalsIgnoreCase(podskazka)){
